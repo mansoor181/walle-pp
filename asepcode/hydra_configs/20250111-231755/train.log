@@ -1,0 +1,29 @@
+[2025-01-11 23:18:25,618][root][INFO] - Epoch 0, EarlyStopper reset counter
+[2025-01-11 23:18:46,994][root][INFO] - Epoch 1, EarlyStopper counter: 1/10
+[2025-01-11 23:19:09,524][root][INFO] - Epoch 2, EarlyStopper counter: 2/10
+[2025-01-11 23:19:31,940][root][INFO] - Epoch 3, EarlyStopper counter: 3/10
+[2025-01-11 23:19:53,019][root][INFO] - Epoch 4, EarlyStopper counter: 4/10
+[2025-01-11 23:20:14,672][root][INFO] - Epoch 5, EarlyStopper counter: 5/10
+[2025-01-11 23:20:36,748][root][INFO] - Epoch 6, EarlyStopper counter: 6/10
+[2025-01-11 23:20:58,191][root][INFO] - Epoch 7, EarlyStopper counter: 7/10
+[2025-01-11 23:21:19,107][root][INFO] - Epoch 8, EarlyStopper counter: 8/10
+[2025-01-11 23:21:40,195][root][INFO] - Epoch 9, EarlyStopper counter: 9/10
+[2025-01-11 23:21:55,755][root][INFO] - Epoch 0, EarlyStopper reset counter
+[2025-01-11 23:22:01,122][root][INFO] - Epoch 10, EarlyStopper counter: 10/10
+[2025-01-11 23:22:16,609][root][INFO] - Epoch 1, EarlyStopper counter: 1/10
+[2025-01-11 23:22:38,390][root][INFO] - Epoch 2, EarlyStopper counter: 2/10
+[2025-01-11 23:23:01,326][root][INFO] - Epoch 3, EarlyStopper counter: 3/10
+[2025-01-11 23:23:25,254][root][INFO] - Epoch 4, EarlyStopper counter: 4/10
+[2025-01-11 23:23:48,555][root][INFO] - Epoch 5, EarlyStopper counter: 5/10
+[2025-01-11 23:24:11,552][root][INFO] - Epoch 6, EarlyStopper counter: 6/10
+[2025-01-11 23:24:34,628][root][INFO] - Epoch 7, EarlyStopper counter: 7/10
+[2025-01-11 23:24:57,092][root][INFO] - Epoch 8, EarlyStopper counter: 8/10
+[2025-01-11 23:25:19,687][root][INFO] - Epoch 9, EarlyStopper counter: 9/10
+[2025-01-11 23:25:42,164][root][INFO] - Epoch 10, EarlyStopper counter: 10/10
+[2025-01-11 23:25:42,172][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250111-231755/20250111-231756/last.pt already exists. It is removed.
+[2025-01-11 23:25:42,254][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250111-231755/20250111-231756/rank_0.pt already exists. It is removed.
+[2025-01-11 23:25:42,255][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250111-231755/20250111-231756/rank_1.pt already exists. It is removed.
+[2025-01-11 23:25:42,256][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250111-231755/20250111-231756/rank_2.pt already exists. It is removed.
+[2025-01-11 23:25:42,266][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250111-231755/20250111-231756/rank_0.pt already exists. It is removed.
+[2025-01-11 23:25:42,267][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250111-231755/20250111-231756/rank_1.pt already exists. It is removed.
+[2025-01-11 23:25:42,267][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250111-231755/20250111-231756/rank_2.pt already exists. It is removed.

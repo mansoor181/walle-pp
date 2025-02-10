@@ -1,0 +1,250 @@
+{'callbacks': {'early_stopping': {'metric_name': 'valEpoch/avg_epi_node_mcc',
+                                  'min_delta': 0.0,
+                                  'minimize': False,
+                                  'patience': 10},
+               'lr_scheduler': {'kwargs': {'gamma': 0.9, 'step_size': 10},
+                                'name': 'StepLR',
+                                'step': None},
+               'model_checkpoint': {'k': 3,
+                                    'metric_name': 'valEpoch/avg_epi_node_mcc',
+                                    'minimize': False,
+                                    'save_dir': '/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250113-203713'},
+               'model_checkpoint_edge': {'k': 3,
+                                         'metric_name': 'valEpoch/avg_edge_index_bg_mcc',
+                                         'minimize': False,
+                                         'save_dir': '/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250113-203713'}},
+ 'dataset': {'ab': {'custom_embedding_method': None,
+                    'custom_embedding_method_src': {'method_name': 'embed_protbert',
+                                                    'name': 'ProtBERT',
+                                                    'script_path': 'asep/data/embedding/protbert.py'},
+                    'embedding_model': 'esm2'},
+             'ag': {'custom_embedding_method': None,
+                    'custom_embedding_method_src': {'method_name': 'embed_esm2',
+                                                    'name': 'ESM2',
+                                                    'script_path': 'asep/data/embedding/esm2.py'},
+                    'embedding_model': 'esm2'},
+             'name': 'asep',
+             'node_feat_type': 'custom',
+             'root': '/home/mansoor/antibody_design/epitope_prediction/data',
+             'split_idx': None,
+             'split_method': None},
+ 'hparams': {'act_list': [None],
+             'batch_size': 128,
+             'decoder': {'name': 'inner_prod'},
+             'dim_list': [128, 64],
+             'edge_cutoff': 0.5,
+             'input_ab_act': 'relu',
+             'input_ab_dim': 1024,
+             'input_ag_act': 'relu',
+             'input_ag_dim': 1024,
+             'max_epochs': 300,
+             'model_type': 'linear',
+             'num_edge_cutoff': 3,
+             'pos_weight': 100,
+             'test_batch_size': 32,
+             'train_batch_size': 128,
+             'val_batch_size': 32},
+ 'keep_interim_ckpts': True,
+ 'logging_method': 'wandb',
+ 'loss': {'edge_index_bg_rec_loss': {'kwargs': {'reduction': 'mean',
+                                                'weight_tensor': 100},
+                                     'name': 'edge_index_bg_rec_loss',
+                                     'w': 1.0},
+          'edge_index_bg_sum_loss': {'kwargs': {'thr': 40},
+                                     'name': 'edge_index_bg_sum_loss',
+                                     'w': 0.0003942821556421417}},
+ 'mode': 'train',
+ 'num_threads': 4,
+ 'optimizer': {'name': 'Adam', 'params': {'lr': 0.001, 'weight_decay': 0.0}},
+ 'seed': 4171674170,
+ 'try_gpu': True,
+ 'wandb_init': {'entity': 'alibilab-gsu',
+                'group': 'train',
+                'job_type': 'train',
+                'notes': 'protbert-esm2',
+                'project': 'retrain-walle-group',
+                'tags': ['train']},
+ 'work_dir': '/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode'}
+wandb run info:
+- name: silvery-thunder-117
+- project: retrain-walle-group
+- entity: alibilab-gsu
+[32m2025-01-13 20:37:14.648[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m116[0m - [1mfinal config:
+{'callbacks': {'early_stopping': {'metric_name': 'valEpoch/avg_epi_node_mcc',
+                                  'min_delta': 0.0,
+                                  'minimize': False,
+                                  'patience': 10},
+               'lr_scheduler': {'kwargs': {'gamma': 0.9, 'step_size': 10},
+                                'name': 'StepLR',
+                                'step': None},
+               'model_checkpoint': {'k': 3,
+                                    'metric_name': 'valEpoch/avg_epi_node_mcc',
+                                    'minimize': False,
+                                    'save_dir': '/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250113-203713/20250113-203714'},
+               'model_checkpoint_edge': {'k': 3,
+                                         'metric_name': 'valEpoch/avg_edge_index_bg_mcc',
+                                         'minimize': False,
+                                         'save_dir': '/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250113-203713/20250113-203714'}},
+ 'dataset': {'ab': {'custom_embedding_method': None,
+                    'custom_embedding_method_src': {'method_name': 'embed_protbert',
+                                                    'name': 'ProtBERT',
+                                                    'script_path': 'asep/data/embedding/protbert.py'},
+                    'embedding_model': 'esm2'},
+             'ag': {'custom_embedding_method': None,
+                    'custom_embedding_method_src': {'method_name': 'embed_esm2',
+                                                    'name': 'ESM2',
+                                                    'script_path': 'asep/data/embedding/esm2.py'},
+                    'embedding_model': 'esm2'},
+             'name': 'asep',
+             'node_feat_type': 'custom',
+             'root': '/home/mansoor/antibody_design/epitope_prediction/data',
+             'split_idx': None,
+             'split_method': None},
+ 'hparams': {'act_list': [None],
+             'batch_size': 128,
+             'decoder': {'name': 'inner_prod'},
+             'dim_list': [128, 64],
+             'edge_cutoff': 0.5,
+             'input_ab_act': 'relu',
+             'input_ab_dim': 1024,
+             'input_ag_act': 'relu',
+             'input_ag_dim': 1024,
+             'max_epochs': 300,
+             'model_type': 'linear',
+             'num_edge_cutoff': 3,
+             'pos_weight': 100,
+             'test_batch_size': 32,
+             'train_batch_size': 128,
+             'val_batch_size': 32},
+ 'keep_interim_ckpts': True,
+ 'logging_method': 'wandb',
+ 'loss': {'edge_index_bg_rec_loss': {'kwargs': {'reduction': 'mean',
+                                                'weight_tensor': 100},
+                                     'name': 'edge_index_bg_rec_loss',
+                                     'w': 1.0},
+          'edge_index_bg_sum_loss': {'kwargs': {'thr': 40},
+                                     'name': 'edge_index_bg_sum_loss',
+                                     'w': 0.0003942821556421417}},
+ 'mode': 'train',
+ 'num_threads': 4,
+ 'optimizer': {'name': 'Adam', 'params': {'lr': 0.001, 'weight_decay': 0.0}},
+ 'seed': 4171674170,
+ 'try_gpu': True,
+ 'wandb_init': {'entity': 'alibilab-gsu',
+                'group': 'train',
+                'job_type': 'train',
+                'notes': 'protbert-esm2',
+                'project': 'retrain-walle-group',
+                'tags': ['train']},
+ 'work_dir': '/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode'}[0m
+[32m2025-01-13 20:37:14.651[0m | [34m[1mDEBUG   [0m | [36masep.train_model[0m:[36mtrain_model[0m:[36m455[0m - [34m[1mconfig:
+{'callbacks': {'early_stopping': {'metric_name': 'valEpoch/avg_epi_node_mcc',
+                                  'min_delta': 0.0,
+                                  'minimize': False,
+                                  'patience': 10},
+               'lr_scheduler': {'kwargs': {'gamma': 0.9, 'step_size': 10},
+                                'name': 'StepLR',
+                                'step': None},
+               'model_checkpoint': {'k': 3,
+                                    'metric_name': 'valEpoch/avg_epi_node_mcc',
+                                    'minimize': False,
+                                    'save_dir': '/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250113-203713/20250113-203714'},
+               'model_checkpoint_edge': {'k': 3,
+                                         'metric_name': 'valEpoch/avg_edge_index_bg_mcc',
+                                         'minimize': False,
+                                         'save_dir': '/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250113-203713/20250113-203714'}},
+ 'dataset': {'ab': {'custom_embedding_method': None,
+                    'custom_embedding_method_src': {'method_name': 'embed_protbert',
+                                                    'name': 'ProtBERT',
+                                                    'script_path': 'asep/data/embedding/protbert.py'},
+                    'embedding_model': 'esm2'},
+             'ag': {'custom_embedding_method': None,
+                    'custom_embedding_method_src': {'method_name': 'embed_esm2',
+                                                    'name': 'ESM2',
+                                                    'script_path': 'asep/data/embedding/esm2.py'},
+                    'embedding_model': 'esm2'},
+             'name': 'asep',
+             'node_feat_type': 'custom',
+             'root': '/home/mansoor/antibody_design/epitope_prediction/data',
+             'split_idx': None,
+             'split_method': None},
+ 'hparams': {'act_list': [None],
+             'batch_size': 128,
+             'decoder': {'name': 'inner_prod'},
+             'dim_list': [128, 64],
+             'edge_cutoff': 0.5,
+             'input_ab_act': 'relu',
+             'input_ab_dim': 1024,
+             'input_ag_act': 'relu',
+             'input_ag_dim': 1024,
+             'max_epochs': 300,
+             'model_type': 'linear',
+             'num_edge_cutoff': 3,
+             'pos_weight': 100,
+             'test_batch_size': 32,
+             'train_batch_size': 128,
+             'val_batch_size': 32},
+ 'keep_interim_ckpts': True,
+ 'logging_method': 'wandb',
+ 'loss': {'edge_index_bg_rec_loss': {'kwargs': {'reduction': 'mean',
+                                                'weight_tensor': 100},
+                                     'name': 'edge_index_bg_rec_loss',
+                                     'w': 1.0},
+          'edge_index_bg_sum_loss': {'kwargs': {'thr': 40},
+                                     'name': 'edge_index_bg_sum_loss',
+                                     'w': 0.0003942821556421417}},
+ 'mode': 'train',
+ 'num_threads': 4,
+ 'optimizer': {'name': 'Adam', 'params': {'lr': 0.001, 'weight_decay': 0.0}},
+ 'seed': 4171674170,
+ 'try_gpu': True,
+ 'wandb_init': {'entity': 'alibilab-gsu',
+                'group': 'train',
+                'job_type': 'train',
+                'notes': 'protbert-esm2',
+                'project': 'retrain-walle-group',
+                'tags': ['train']},
+ 'work_dir': '/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode'}[0m
+Loading custom embedding function from asep/data/embedding/protbert.py
+Some weights of the model checkpoint at Rostlab/prot_t5_xl_uniref50 were not used when initializing T5EncoderModel: ['decoder.block.12.layer.0.layer_norm.weight', 'decoder.block.12.layer.1.EncDecAttention.o.weight', 'decoder.block.11.layer.0.SelfAttention.q.weight', 'decoder.final_layer_norm.weight', 'decoder.block.9.layer.1.EncDecAttention.v.weight', 'decoder.block.21.layer.1.EncDecAttention.o.weight', 'decoder.block.0.layer.0.layer_norm.weight', 'decoder.block.13.layer.2.DenseReluDense.wo.weight', 'decoder.block.8.layer.0.SelfAttention.q.weight', 'decoder.block.18.layer.0.layer_norm.weight', 'decoder.block.16.layer.1.layer_norm.weight', 'decoder.block.15.layer.1.layer_norm.weight', 'decoder.block.0.layer.0.SelfAttention.q.weight', 'decoder.block.0.layer.2.DenseReluDense.wi.weight', 'decoder.block.18.layer.2.DenseReluDense.wo.weight', 'decoder.block.23.layer.1.EncDecAttention.v.weight', 'decoder.block.23.layer.2.DenseReluDense.wi.weight', 'decoder.block.10.layer.0.SelfAttention.v.weight', 'decoder.block.2.layer.2.layer_norm.weight', 'decoder.block.15.layer.1.EncDecAttention.o.weight', 'decoder.block.10.layer.0.SelfAttention.q.weight', 'decoder.block.16.layer.1.EncDecAttention.v.weight', 'decoder.block.2.layer.0.layer_norm.weight', 'decoder.block.3.layer.2.layer_norm.weight', 'decoder.block.10.layer.0.SelfAttention.o.weight', 'decoder.block.8.layer.1.EncDecAttention.k.weight', 'decoder.block.2.layer.1.EncDecAttention.q.weight', 'decoder.block.10.layer.1.EncDecAttention.q.weight', 'decoder.block.15.layer.1.EncDecAttention.k.weight', 'decoder.block.22.layer.0.SelfAttention.o.weight', 'decoder.block.6.layer.2.DenseReluDense.wi.weight', 'decoder.block.1.layer.1.EncDecAttention.v.weight', 'decoder.block.22.layer.2.layer_norm.weight', 'decoder.block.7.layer.0.SelfAttention.v.weight', 'decoder.block.7.layer.2.DenseReluDense.wi.weight', 'decoder.block.13.layer.1.EncDecAttention.o.weight', 'decoder.block.5.layer.1.EncDecAttention.q.weight', 'decoder.block.3.layer.0.SelfAttention.o.weight', 'decoder.embed_tokens.weight', 'decoder.block.7.layer.1.EncDecAttention.o.weight', 'decoder.block.13.layer.0.SelfAttention.v.weight', 'decoder.block.9.layer.2.DenseReluDense.wo.weight', 'decoder.block.6.layer.1.EncDecAttention.k.weight', 'decoder.block.11.layer.2.layer_norm.weight', 'decoder.block.20.layer.1.EncDecAttention.q.weight', 'decoder.block.2.layer.0.SelfAttention.v.weight', 'decoder.block.6.layer.0.layer_norm.weight', 'decoder.block.18.layer.2.layer_norm.weight', 'decoder.block.5.layer.1.EncDecAttention.o.weight', 'decoder.block.6.layer.0.SelfAttention.v.weight', 'decoder.block.19.layer.2.DenseReluDense.wo.weight', 'decoder.block.16.layer.1.EncDecAttention.q.weight', 'decoder.block.22.layer.2.DenseReluDense.wo.weight', 'decoder.block.16.layer.2.DenseReluDense.wo.weight', 'decoder.block.18.layer.1.EncDecAttention.q.weight', 'decoder.block.12.layer.2.DenseReluDense.wo.weight', 'decoder.block.14.layer.1.EncDecAttention.v.weight', 'decoder.block.18.layer.1.EncDecAttention.v.weight', 'decoder.block.23.layer.1.EncDecAttention.o.weight', 'decoder.block.14.layer.1.layer_norm.weight', 'decoder.block.19.layer.0.SelfAttention.o.weight', 'decoder.block.23.layer.1.EncDecAttention.k.weight', 'decoder.block.11.layer.1.layer_norm.weight', 'decoder.block.17.layer.1.EncDecAttention.q.weight', 'decoder.block.15.layer.0.SelfAttention.v.weight', 'decoder.block.3.layer.1.layer_norm.weight', 'decoder.block.2.layer.0.SelfAttention.k.weight', 'decoder.block.6.layer.1.EncDecAttention.o.weight', 'decoder.block.6.layer.1.layer_norm.weight', 'decoder.block.7.layer.1.EncDecAttention.q.weight', 'decoder.block.1.layer.1.EncDecAttention.k.weight', 'decoder.block.6.layer.2.layer_norm.weight', 'decoder.block.13.layer.1.EncDecAttention.q.weight', 'decoder.block.21.layer.0.SelfAttention.q.weight', 'decoder.block.22.layer.0.SelfAttention.k.weight', 'decoder.block.18.layer.0.SelfAttention.q.weight', 'decoder.block.9.layer.1.EncDecAttention.o.weight', 'decoder.block.20.layer.0.SelfAttention.k.weight', 'decoder.block.23.layer.0.SelfAttention.q.weight', 'decoder.block.0.layer
+- This IS expected if you are initializing T5EncoderModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing T5EncoderModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Loaded function embed_protbert from asep/data/embedding/protbert.py
+Output shape from custom embedding function: torch.Size([20, 1024])
+Custom embedding function loaded: <function embed_protbert at 0x7fa3678f0310>
+Loading custom embedding function from asep/data/embedding/esm2.py
+Using device: cuda
+Loaded function embed_esm2 from asep/data/embedding/esm2.py
+Output shape from custom embedding function: torch.Size([20, 1280])
+Custom embedding function loaded: <function embed_esm2 at 0x7fa3ee303ac0>
+Reading from custom embedding file: ProtBERT_ESM2_emb.pt
+Train batch x_b shape: torch.Size([7637, 1024])
+Train batch x_g shape: torch.Size([37566, 1280])
+Val batch x_b shape: torch.Size([1955, 1024])
+Val batch x_g shape: torch.Size([9065, 1280])
+Test batch x_b shape: torch.Size([1948, 1024])
+Test batch x_g shape: torch.Size([10342, 1280])
+Error executing job with overrides: ['mode=train', 'wandb_init.project=retrain-walle-group', "wandb_init.notes='protbert-esm2'", 'hparams.max_epochs=300', 'hparams.pos_weight=100', 'hparams.train_batch_size=128', 'hparams.val_batch_size=32', 'hparams.test_batch_size=32', 'hparams.input_ab_dim=1024', 'hparams.input_ag_dim=1024', 'dataset.node_feat_type=custom', 'dataset.ab.custom_embedding_method_src.script_path=asep/data/embedding/protbert.py', 'dataset.ab.custom_embedding_method_src.method_name=embed_protbert', 'dataset.ab.custom_embedding_method_src.name=ProtBERT', 'dataset.ag.custom_embedding_method_src.script_path=asep/data/embedding/esm2.py', 'dataset.ag.custom_embedding_method_src.method_name=embed_esm2', 'dataset.ag.custom_embedding_method_src.name=ESM2', 'hparams.model_type=linear']
+Traceback (most recent call last):
+  File "/home/mansoor/anaconda3/envs/bio_venv/lib/python3.10/site-packages/torch/serialization.py", line 379, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/home/mansoor/anaconda3/envs/bio_venv/lib/python3.10/site-packages/torch/serialization.py", line 604, in _save
+    zip_file.write_record(name, storage.data_ptr(), num_bytes)
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/train.py", line 117, in main
+    train_model(
+  File "/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/asep/train_model.py", line 469, in train_model
+    train_loader, val_loader, test_loader = create_asepv1_dataloaders(
+  File "/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/asep/train_model.py", line 244, in create_asepv1_dataloaders
+    torch.save(train_set[0], f)
+  File "/home/mansoor/anaconda3/envs/bio_venv/lib/python3.10/site-packages/torch/serialization.py", line 378, in save
+    with _open_zipfile_writer(opened_file) as opened_zipfile:
+  File "/home/mansoor/anaconda3/envs/bio_venv/lib/python3.10/site-packages/torch/serialization.py", line 259, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:319] . unexpected pos 427259008 vs 427258960
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

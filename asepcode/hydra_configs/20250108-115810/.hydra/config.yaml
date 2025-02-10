@@ -1,0 +1,95 @@
+hparams:
+  model_type: graph
+  train_batch_size: 128
+  val_batch_size: 32
+  test_batch_size: 32
+  batch_size: ${.train_batch_size}
+  max_epochs: 5
+  pos_weight: 100
+  input_ab_dim: 640
+  input_ag_dim: 640
+  input_ab_act: relu
+  input_ag_act: relu
+  dim_list:
+  - 128
+  - 64
+  act_list:
+  - null
+  decoder:
+    name: inner_prod
+  num_edge_cutoff: 3
+  edge_cutoff: 0.5
+loss:
+  edge_index_bg_rec_loss:
+    name: edge_index_bg_rec_loss
+    w: 1.0
+    kwargs:
+      reduction: mean
+      weight_tensor: ${hparams.pos_weight}
+  edge_index_bg_sum_loss:
+    name: edge_index_bg_sum_loss
+    w: 0.0003942821556421417
+    kwargs:
+      thr: 40
+optimizer:
+  name: Adam
+  params:
+    lr: 0.001
+    weight_decay: 0.0
+callbacks:
+  early_stopping:
+    patience: 10
+    min_delta: 0.0
+    minimize: false
+    metric_name: valEpoch/avg_epi_node_mcc
+  model_checkpoint:
+    save_dir: ${hydra:runtime.cwd}/../../results/asep/ckpts
+    k: 3
+    minimize: false
+    metric_name: valEpoch/avg_epi_node_mcc
+  model_checkpoint_edge:
+    save_dir: ${hydra:runtime.cwd}/../../results/asep/ckpts/edge
+    k: 3
+    minimize: false
+    metric_name: valEpoch/avg_edge_index_bg_mcc
+  lr_scheduler:
+    name: StepLR
+    kwargs:
+      step_size: 10
+      gamma: 0.9
+    step: null
+wandb_init:
+  project: retrain-walle
+  entity: ${oc.env:WANDB_ENTITY}
+  group: ${mode}
+  job_type: ${mode}
+  notes: esm2
+  tags:
+  - ${mode}
+dataset:
+  root: ~/Documents/GSU/Projects/Antibody-Design/epitope-prediction/data
+  name: asep
+  node_feat_type: custom
+  ab:
+    embedding_model: esm2
+    custom_embedding_method: null
+    custom_embedding_method_src:
+      script_path: asep/data/embedding/esm2.py
+      method_name: esm2_residue_embedding
+      name: ESM2
+  ag:
+    embedding_model: esm2
+    custom_embedding_method: null
+    custom_embedding_method_src:
+      script_path: asep/data/embedding/esm2.py
+      method_name: esm2_residue_embedding
+      name: ESM2
+  split_idx: null
+  split_method: null
+work_dir: ${hydra:runtime.cwd}
+mode: train
+try_gpu: true
+logging_method: wandb
+keep_interim_ckpts: true
+num_threads: 4
+seed: ???

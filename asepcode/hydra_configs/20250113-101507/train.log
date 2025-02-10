@@ -1,0 +1,11 @@
+[2025-01-13 10:15:40,142][root][INFO] - Epoch 0, EarlyStopper reset counter
+[2025-01-13 10:15:57,546][root][INFO] - Epoch 1, EarlyStopper counter: 1/10
+[2025-01-13 10:16:14,960][root][INFO] - Epoch 2, EarlyStopper counter: 2/10
+[2025-01-13 10:16:31,972][root][INFO] - Epoch 3, EarlyStopper counter: 3/10
+[2025-01-13 10:16:49,342][root][INFO] - Epoch 4, EarlyStopper counter: 4/10
+[2025-01-13 10:17:06,081][root][INFO] - Epoch 5, EarlyStopper counter: 5/10
+[2025-01-13 10:17:23,507][root][INFO] - Epoch 6, EarlyStopper counter: 6/10
+[2025-01-13 10:17:40,083][root][INFO] - Epoch 7, EarlyStopper counter: 7/10
+[2025-01-13 10:17:57,135][root][INFO] - Epoch 8, EarlyStopper counter: 8/10
+[2025-01-13 10:18:14,066][root][INFO] - Epoch 9, EarlyStopper counter: 9/10
+[2025-01-13 10:18:31,840][root][INFO] - Epoch 10, EarlyStopper counter: 10/10

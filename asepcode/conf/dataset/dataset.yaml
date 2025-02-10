@@ -1,0 +1,25 @@
+#root: ~/Documents/GSU/Projects/Antibody-Design/epitope-prediction/data            # root path for storing AsEP dataset
+root: /home/mansoor/antibody_design/epitope_prediction/data
+
+name: asep                 # dataset name
+node_feat_type: 'pre_cal'  # choices=['pre_cal', 'one_hot', 'custom']
+
+ab:
+  embedding_model: 'esm2'     # choices: ['igfold', 'esm2', 'one_hot'， 'custom']
+  custom_embedding_method: null # Optional[Callable]
+  custom_embedding_method_src:
+    script_path: null           # Optional[str]
+    method_name: null           # Optional[str]
+    name: null                  # name of the custom method for logging identification
+
+ag:
+  embedding_model: 'esm2'       # choices: ['esm2', 'one_hot'， 'custom']
+  custom_embedding_method: null # Optional[Callable]
+  custom_embedding_method_src:
+    script_path: null           # Optional[str]
+    method_name: null           # Optional[str]
+    name: null                  # name of the custom method for logging identification
+
+split_idx: null     # Optional[Dict]
+split_method: null  # choices: [null, epitope_ratio, epitope_group]
+                    # if null, default to epitope_ratio

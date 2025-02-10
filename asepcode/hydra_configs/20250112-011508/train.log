@@ -1,0 +1,161 @@
+[2025-01-12 01:15:46,356][root][INFO] - Epoch 0, EarlyStopper reset counter
+[2025-01-12 01:16:09,814][root][INFO] - Epoch 1, EarlyStopper counter: 1/10
+[2025-01-12 01:16:33,474][root][INFO] - Epoch 2, EarlyStopper counter: 2/10
+[2025-01-12 01:16:57,378][root][INFO] - Epoch 3, EarlyStopper counter: 3/10
+[2025-01-12 01:17:21,102][root][INFO] - Epoch 4, EarlyStopper counter: 4/10
+[2025-01-12 01:17:44,152][root][INFO] - Epoch 5, EarlyStopper counter: 5/10
+[2025-01-12 01:18:07,194][root][INFO] - Epoch 6, EarlyStopper counter: 6/10
+[2025-01-12 01:18:30,155][root][INFO] - Epoch 7, EarlyStopper counter: 7/10
+[2025-01-12 01:18:53,373][root][INFO] - Epoch 8, EarlyStopper counter: 8/10
+[2025-01-12 01:19:16,890][root][INFO] - Epoch 9, EarlyStopper counter: 9/10
+[2025-01-12 01:19:40,100][root][INFO] - Epoch 10, EarlyStopper counter: 10/10
+[2025-01-12 02:41:18,084][root][INFO] - Epoch 0, EarlyStopper reset counter
+[2025-01-12 02:41:38,686][root][INFO] - Epoch 1, EarlyStopper counter: 1/10
+[2025-01-12 02:41:59,858][root][INFO] - Epoch 2, EarlyStopper counter: 2/10
+[2025-01-12 02:42:20,935][root][INFO] - Epoch 3, EarlyStopper counter: 3/10
+[2025-01-12 02:42:42,368][root][INFO] - Epoch 4, EarlyStopper counter: 4/10
+[2025-01-12 02:43:03,499][root][INFO] - Epoch 5, EarlyStopper counter: 5/10
+[2025-01-12 02:43:24,744][root][INFO] - Epoch 6, EarlyStopper counter: 6/10
+[2025-01-12 02:43:45,336][root][INFO] - Epoch 7, EarlyStopper counter: 7/10
+[2025-01-12 02:44:05,876][root][INFO] - Epoch 8, EarlyStopper counter: 8/10
+[2025-01-12 02:44:26,376][root][INFO] - Epoch 9, EarlyStopper counter: 9/10
+[2025-01-12 02:44:47,351][root][INFO] - Epoch 10, EarlyStopper counter: 10/10
+[2025-01-12 02:44:47,364][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250112-011508/20250112-011509/last.pt already exists. It is removed.
+[2025-01-12 02:44:47,461][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250112-011508/20250112-011509/rank_0.pt already exists. It is removed.
+[2025-01-12 02:44:47,463][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250112-011508/20250112-011509/rank_1.pt already exists. It is removed.
+[2025-01-12 02:44:47,463][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250112-011508/20250112-011509/rank_2.pt already exists. It is removed.
+[2025-01-12 02:44:47,476][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250112-011508/20250112-011509/rank_0.pt already exists. It is removed.
+[2025-01-12 02:44:47,477][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250112-011508/20250112-011509/rank_1.pt already exists. It is removed.
+[2025-01-12 02:44:47,478][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250112-011508/20250112-011509/rank_2.pt already exists. It is removed.
+[2025-01-12 07:43:26,436][root][INFO] - Epoch 0, EarlyStopper reset counter
+[2025-01-12 07:43:53,636][root][INFO] - Epoch 1, EarlyStopper reset counter
+[2025-01-12 07:44:21,253][root][INFO] - Epoch 2, EarlyStopper reset counter
+[2025-01-12 07:44:48,170][root][INFO] - Epoch 3, EarlyStopper reset counter
+[2025-01-12 07:45:15,033][root][INFO] - Epoch 4, EarlyStopper reset counter
+[2025-01-12 07:45:43,265][root][INFO] - Epoch 5, EarlyStopper reset counter
+[2025-01-12 07:46:10,732][root][INFO] - Epoch 6, EarlyStopper reset counter
+[2025-01-12 07:46:38,666][root][INFO] - Epoch 7, EarlyStopper reset counter
+[2025-01-12 07:47:06,154][root][INFO] - Epoch 8, EarlyStopper reset counter
+[2025-01-12 07:47:33,255][root][INFO] - Epoch 9, EarlyStopper reset counter
+[2025-01-12 07:47:59,442][root][INFO] - Epoch 10, EarlyStopper reset counter
+[2025-01-12 07:48:26,727][root][INFO] - Epoch 11, EarlyStopper reset counter
+[2025-01-12 07:48:54,581][root][INFO] - Epoch 12, EarlyStopper reset counter
+[2025-01-12 07:49:21,824][root][INFO] - Epoch 13, EarlyStopper reset counter
+[2025-01-12 07:49:49,187][root][INFO] - Epoch 14, EarlyStopper reset counter
+[2025-01-12 07:50:17,512][root][INFO] - Epoch 15, EarlyStopper reset counter
+[2025-01-12 07:50:45,998][root][INFO] - Epoch 16, EarlyStopper reset counter
+[2025-01-12 07:51:13,798][root][INFO] - Epoch 17, EarlyStopper reset counter
+[2025-01-12 07:51:41,801][root][INFO] - Epoch 18, EarlyStopper reset counter
+[2025-01-12 07:52:09,396][root][INFO] - Epoch 19, EarlyStopper reset counter
+[2025-01-12 07:52:37,086][root][INFO] - Epoch 20, EarlyStopper reset counter
+[2025-01-12 07:53:04,089][root][INFO] - Epoch 21, EarlyStopper reset counter
+[2025-01-12 07:53:31,451][root][INFO] - Epoch 22, EarlyStopper reset counter
+[2025-01-12 07:53:59,823][root][INFO] - Epoch 23, EarlyStopper reset counter
+[2025-01-12 07:54:27,637][root][INFO] - Epoch 24, EarlyStopper counter: 1/10
+[2025-01-12 07:54:54,927][root][INFO] - Epoch 25, EarlyStopper reset counter
+[2025-01-12 07:55:22,655][root][INFO] - Epoch 26, EarlyStopper reset counter
+[2025-01-12 07:55:49,578][root][INFO] - Epoch 27, EarlyStopper reset counter
+[2025-01-12 07:56:15,691][root][INFO] - Epoch 28, EarlyStopper counter: 1/10
+[2025-01-12 07:56:42,845][root][INFO] - Epoch 29, EarlyStopper counter: 2/10
+[2025-01-12 07:57:09,874][root][INFO] - Epoch 30, EarlyStopper reset counter
+[2025-01-12 07:57:37,060][root][INFO] - Epoch 31, EarlyStopper counter: 1/10
+[2025-01-12 07:58:05,419][root][INFO] - Epoch 32, EarlyStopper counter: 2/10
+[2025-01-12 07:58:33,224][root][INFO] - Epoch 33, EarlyStopper counter: 3/10
+[2025-01-12 07:59:00,547][root][INFO] - Epoch 34, EarlyStopper counter: 4/10
+[2025-01-12 07:59:27,168][root][INFO] - Epoch 35, EarlyStopper reset counter
+[2025-01-12 07:59:54,886][root][INFO] - Epoch 36, EarlyStopper reset counter
+[2025-01-12 08:00:22,165][root][INFO] - Epoch 37, EarlyStopper counter: 1/10
+[2025-01-12 08:00:50,074][root][INFO] - Epoch 38, EarlyStopper counter: 2/10
+[2025-01-12 08:01:17,767][root][INFO] - Epoch 39, EarlyStopper reset counter
+[2025-01-12 08:01:45,008][root][INFO] - Epoch 40, EarlyStopper reset counter
+[2025-01-12 08:02:12,982][root][INFO] - Epoch 41, EarlyStopper counter: 1/10
+[2025-01-12 08:02:40,388][root][INFO] - Epoch 42, EarlyStopper counter: 2/10
+[2025-01-12 08:03:07,706][root][INFO] - Epoch 43, EarlyStopper reset counter
+[2025-01-12 08:03:36,093][root][INFO] - Epoch 44, EarlyStopper reset counter
+[2025-01-12 08:04:04,783][root][INFO] - Epoch 45, EarlyStopper counter: 1/10
+[2025-01-12 08:04:31,885][root][INFO] - Epoch 46, EarlyStopper counter: 2/10
+[2025-01-12 08:05:00,092][root][INFO] - Epoch 47, EarlyStopper counter: 3/10
+[2025-01-12 08:05:27,426][root][INFO] - Epoch 48, EarlyStopper counter: 4/10
+[2025-01-12 08:05:54,949][root][INFO] - Epoch 49, EarlyStopper counter: 5/10
+[2025-01-12 08:06:21,458][root][INFO] - Epoch 50, EarlyStopper counter: 6/10
+[2025-01-12 08:06:48,140][root][INFO] - Epoch 51, EarlyStopper counter: 7/10
+[2025-01-12 08:07:15,719][root][INFO] - Epoch 52, EarlyStopper counter: 8/10
+[2025-01-12 08:07:42,789][root][INFO] - Epoch 53, EarlyStopper counter: 9/10
+[2025-01-12 08:08:10,632][root][INFO] - Epoch 54, EarlyStopper counter: 10/10
+[2025-01-12 08:08:10,642][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250112-011508/20250112-011509/last.pt already exists. It is removed.
+[2025-01-12 08:08:10,727][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250112-011508/20250112-011509/rank_0.pt already exists. It is removed.
+[2025-01-12 08:08:10,728][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250112-011508/20250112-011509/rank_1.pt already exists. It is removed.
+[2025-01-12 08:08:10,729][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250112-011508/20250112-011509/rank_2.pt already exists. It is removed.
+[2025-01-12 08:08:10,739][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250112-011508/20250112-011509/rank_0.pt already exists. It is removed.
+[2025-01-12 08:08:10,740][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250112-011508/20250112-011509/rank_1.pt already exists. It is removed.
+[2025-01-12 08:08:10,740][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250112-011508/20250112-011509/rank_2.pt already exists. It is removed.
+[2025-01-12 08:11:04,909][root][INFO] - Epoch 0, EarlyStopper reset counter
+[2025-01-12 08:11:27,696][root][INFO] - Epoch 1, EarlyStopper reset counter
+[2025-01-12 08:11:50,048][root][INFO] - Epoch 2, EarlyStopper reset counter
+[2025-01-12 08:12:12,339][root][INFO] - Epoch 3, EarlyStopper reset counter
+[2025-01-12 08:12:34,565][root][INFO] - Epoch 4, EarlyStopper reset counter
+[2025-01-12 08:12:56,627][root][INFO] - Epoch 5, EarlyStopper reset counter
+[2025-01-12 08:13:19,253][root][INFO] - Epoch 6, EarlyStopper reset counter
+[2025-01-12 08:13:41,268][root][INFO] - Epoch 7, EarlyStopper reset counter
+[2025-01-12 08:14:03,568][root][INFO] - Epoch 8, EarlyStopper reset counter
+[2025-01-12 08:14:25,821][root][INFO] - Epoch 9, EarlyStopper reset counter
+[2025-01-12 08:14:48,094][root][INFO] - Epoch 10, EarlyStopper reset counter
+[2025-01-12 08:15:10,067][root][INFO] - Epoch 11, EarlyStopper reset counter
+[2025-01-12 08:15:32,300][root][INFO] - Epoch 12, EarlyStopper reset counter
+[2025-01-12 08:15:54,477][root][INFO] - Epoch 13, EarlyStopper reset counter
+[2025-01-12 08:16:16,988][root][INFO] - Epoch 14, EarlyStopper reset counter
+[2025-01-12 08:16:38,894][root][INFO] - Epoch 15, EarlyStopper reset counter
+[2025-01-12 08:17:01,222][root][INFO] - Epoch 16, EarlyStopper reset counter
+[2025-01-12 08:17:23,335][root][INFO] - Epoch 17, EarlyStopper reset counter
+[2025-01-12 08:17:45,535][root][INFO] - Epoch 18, EarlyStopper counter: 1/10
+[2025-01-12 08:18:07,496][root][INFO] - Epoch 19, EarlyStopper counter: 2/10
+[2025-01-12 08:18:29,836][root][INFO] - Epoch 20, EarlyStopper reset counter
+[2025-01-12 08:18:51,990][root][INFO] - Epoch 21, EarlyStopper reset counter
+[2025-01-12 08:19:14,264][root][INFO] - Epoch 22, EarlyStopper counter: 1/10
+[2025-01-12 08:19:36,817][root][INFO] - Epoch 23, EarlyStopper reset counter
+[2025-01-12 08:19:59,122][root][INFO] - Epoch 24, EarlyStopper counter: 1/10
+[2025-01-12 08:20:21,233][root][INFO] - Epoch 25, EarlyStopper counter: 2/10
+[2025-01-12 08:20:43,367][root][INFO] - Epoch 26, EarlyStopper reset counter
+[2025-01-12 08:21:05,637][root][INFO] - Epoch 27, EarlyStopper counter: 1/10
+[2025-01-12 08:21:27,915][root][INFO] - Epoch 28, EarlyStopper counter: 2/10
+[2025-01-12 08:21:50,121][root][INFO] - Epoch 29, EarlyStopper reset counter
+[2025-01-12 08:22:12,258][root][INFO] - Epoch 30, EarlyStopper reset counter
+[2025-01-12 08:22:34,663][root][INFO] - Epoch 31, EarlyStopper counter: 1/10
+[2025-01-12 08:22:57,101][root][INFO] - Epoch 32, EarlyStopper counter: 2/10
+[2025-01-12 08:23:19,303][root][INFO] - Epoch 33, EarlyStopper counter: 3/10
+[2025-01-12 08:23:41,375][root][INFO] - Epoch 34, EarlyStopper counter: 4/10
+[2025-01-12 08:24:03,783][root][INFO] - Epoch 35, EarlyStopper counter: 5/10
+[2025-01-12 08:24:25,807][root][INFO] - Epoch 36, EarlyStopper reset counter
+[2025-01-12 08:24:47,980][root][INFO] - Epoch 37, EarlyStopper reset counter
+[2025-01-12 08:25:10,238][root][INFO] - Epoch 38, EarlyStopper counter: 1/10
+[2025-01-12 08:25:32,479][root][INFO] - Epoch 39, EarlyStopper counter: 2/10
+[2025-01-12 08:25:54,592][root][INFO] - Epoch 40, EarlyStopper counter: 3/10
+[2025-01-12 08:26:17,019][root][INFO] - Epoch 41, EarlyStopper reset counter
+[2025-01-12 08:26:39,248][root][INFO] - Epoch 42, EarlyStopper counter: 1/10
+[2025-01-12 08:27:01,364][root][INFO] - Epoch 43, EarlyStopper counter: 2/10
+[2025-01-12 08:27:23,469][root][INFO] - Epoch 44, EarlyStopper counter: 3/10
+[2025-01-12 08:27:45,507][root][INFO] - Epoch 45, EarlyStopper counter: 4/10
+[2025-01-12 08:28:07,785][root][INFO] - Epoch 46, EarlyStopper reset counter
+[2025-01-12 08:28:29,864][root][INFO] - Epoch 47, EarlyStopper counter: 1/10
+[2025-01-12 08:28:52,223][root][INFO] - Epoch 48, EarlyStopper counter: 2/10
+[2025-01-12 08:29:14,575][root][INFO] - Epoch 49, EarlyStopper counter: 3/10
+[2025-01-12 08:29:36,737][root][INFO] - Epoch 50, EarlyStopper counter: 4/10
+[2025-01-12 08:29:58,993][root][INFO] - Epoch 51, EarlyStopper counter: 5/10
+[2025-01-12 08:30:21,429][root][INFO] - Epoch 52, EarlyStopper reset counter
+[2025-01-12 08:30:43,808][root][INFO] - Epoch 53, EarlyStopper counter: 1/10
+[2025-01-12 08:31:05,958][root][INFO] - Epoch 54, EarlyStopper counter: 2/10
+[2025-01-12 08:31:27,970][root][INFO] - Epoch 55, EarlyStopper counter: 3/10
+[2025-01-12 08:31:50,292][root][INFO] - Epoch 56, EarlyStopper counter: 4/10
+[2025-01-12 08:32:12,331][root][INFO] - Epoch 57, EarlyStopper counter: 5/10
+[2025-01-12 08:32:34,517][root][INFO] - Epoch 58, EarlyStopper counter: 6/10
+[2025-01-12 08:32:56,511][root][INFO] - Epoch 59, EarlyStopper counter: 7/10
+[2025-01-12 08:33:18,987][root][INFO] - Epoch 60, EarlyStopper counter: 8/10
+[2025-01-12 08:33:41,113][root][INFO] - Epoch 61, EarlyStopper counter: 9/10
+[2025-01-12 08:34:03,311][root][INFO] - Epoch 62, EarlyStopper counter: 10/10
+[2025-01-12 08:34:03,322][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250112-011508/20250112-011509/last.pt already exists. It is removed.
+[2025-01-12 08:34:03,416][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250112-011508/20250112-011509/rank_0.pt already exists. It is removed.
+[2025-01-12 08:34:03,417][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250112-011508/20250112-011509/rank_1.pt already exists. It is removed.
+[2025-01-12 08:34:03,418][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/20250112-011508/20250112-011509/rank_2.pt already exists. It is removed.
+[2025-01-12 08:34:03,426][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250112-011508/20250112-011509/rank_0.pt already exists. It is removed.
+[2025-01-12 08:34:03,427][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250112-011508/20250112-011509/rank_1.pt already exists. It is removed.
+[2025-01-12 08:34:03,427][root][WARNING] - soft link /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/../../results/asep/ckpts/edge/20250112-011508/20250112-011509/rank_2.pt already exists. It is removed.

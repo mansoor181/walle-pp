@@ -1,0 +1,5 @@
+[2025-01-08 14:56:45,705][root][INFO] - Epoch 0, EarlyStopper reset counter
+[2025-01-08 14:56:50,569][root][INFO] - Epoch 1, EarlyStopper counter: 1/10
+[2025-01-08 14:56:55,772][root][INFO] - Epoch 2, EarlyStopper reset counter
+[2025-01-08 14:57:00,977][root][INFO] - Epoch 3, EarlyStopper reset counter
+[2025-01-08 14:57:06,122][root][INFO] - Epoch 4, EarlyStopper counter: 1/10

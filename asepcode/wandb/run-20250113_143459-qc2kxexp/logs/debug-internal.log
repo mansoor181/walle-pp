@@ -1,0 +1,15 @@
+{"time":"2025-01-13T14:34:59.971046831-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/wandb/run-20250113_143459-qc2kxexp/logs/debug-core.log"}
+{"time":"2025-01-13T14:35:00.080508765-05:00","level":"INFO","msg":"created new stream","id":"qc2kxexp"}
+{"time":"2025-01-13T14:35:00.080550979-05:00","level":"INFO","msg":"stream: started","id":"qc2kxexp"}
+{"time":"2025-01-13T14:35:00.080632152-05:00","level":"INFO","msg":"handler: started","stream_id":"qc2kxexp"}
+{"time":"2025-01-13T14:35:00.080632623-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"qc2kxexp"}
+{"time":"2025-01-13T14:35:00.080723921-05:00","level":"INFO","msg":"sender: started","stream_id":"qc2kxexp"}
+{"time":"2025-01-13T14:35:00.384988468-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-13T14:35:13.913722857-05:00","level":"INFO","msg":"stream: closing","id":"qc2kxexp"}
+{"time":"2025-01-13T14:35:13.913763005-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-13T14:35:13.914604829-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-13T14:35:14.297940546-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-13T14:35:14.389105085-05:00","level":"INFO","msg":"handler: closed","stream_id":"qc2kxexp"}
+{"time":"2025-01-13T14:35:14.389156185-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qc2kxexp"}
+{"time":"2025-01-13T14:35:14.389168652-05:00","level":"INFO","msg":"sender: closed","stream_id":"qc2kxexp"}
+{"time":"2025-01-13T14:35:14.389242026-05:00","level":"INFO","msg":"stream: closed","id":"qc2kxexp"}

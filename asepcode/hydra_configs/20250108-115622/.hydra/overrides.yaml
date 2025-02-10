@@ -1,0 +1,17 @@
+- mode=train
+- wandb_init.project=retrain-walle
+- wandb_init.notes='esm2'
+- hparams.max_epochs=5
+- hparams.pos_weight=100
+- hparams.train_batch_size=128
+- hparams.val_batch_size=32
+- hparams.test_batch_size=32
+- dataset.node_feat_type=custom
+- dataset.ab.custom_embedding_method_src.script_path=asep/data/embedding/esm2.py
+- dataset.ab.custom_embedding_method_src.method_name=esm2_residue_embedding
+- dataset.ab.custom_embedding_method_src.name=ESM2
+- dataset.ag.custom_embedding_method_src.script_path=asep/data/embedding/esm2.py
+- dataset.ag.custom_embedding_method_src.method_name=esm2_residue_embedding
+- dataset.ag.custom_embedding_method_src.name=ESM2
+- hparams.input_ab_dim=640
+- hparams.input_ag_dim=640

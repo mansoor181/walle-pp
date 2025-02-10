@@ -1,0 +1,182 @@
+hydra:
+  run:
+    dir: ./hydra_configs/${now:%Y%m%d-%H%M%S}
+  sweep:
+    dir: multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}
+  launcher:
+    _target_: hydra._internal.core_plugins.basic_launcher.BasicLauncher
+  sweeper:
+    _target_: hydra._internal.core_plugins.basic_sweeper.BasicSweeper
+    max_batch_size: null
+    params: null
+  help:
+    app_name: ${hydra.job.name}
+    header: '${hydra.help.app_name} is powered by Hydra.
+
+      '
+    footer: 'Powered by Hydra (https://hydra.cc)
+
+      Use --hydra-help to view Hydra specific help
+
+      '
+    template: '${hydra.help.header}
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (group=option)
+
+
+      $APP_CONFIG_GROUPS
+
+
+      == Config ==
+
+      Override anything in the config (foo.bar=value)
+
+
+      $CONFIG
+
+
+      ${hydra.help.footer}
+
+      '
+  hydra_help:
+    template: 'Hydra (${hydra.runtime.version})
+
+      See https://hydra.cc for more info.
+
+
+      == Flags ==
+
+      $FLAGS_HELP
+
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (For example, append hydra/job_logging=disabled
+      to command line)
+
+
+      $HYDRA_CONFIG_GROUPS
+
+
+      Use ''--cfg hydra'' to Show the Hydra config.
+
+      '
+    hydra_help: ???
+  hydra_logging:
+    version: 1
+    formatters:
+      simple:
+        format: '[%(asctime)s][HYDRA] %(message)s'
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+    root:
+      level: INFO
+      handlers:
+      - console
+    loggers:
+      logging_example:
+        level: DEBUG
+    disable_existing_loggers: false
+  job_logging:
+    version: 1
+    formatters:
+      simple:
+        format: '[%(asctime)s][%(name)s][%(levelname)s] - %(message)s'
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+      file:
+        class: logging.FileHandler
+        formatter: simple
+        filename: ${hydra.runtime.output_dir}/${hydra.job.name}.log
+    root:
+      level: INFO
+      handlers:
+      - console
+      - file
+    disable_existing_loggers: false
+  env: {}
+  mode: RUN
+  searchpath: []
+  callbacks: {}
+  output_subdir: .hydra
+  overrides:
+    hydra:
+    - hydra.mode=RUN
+    task:
+    - mode=train
+    - wandb_init.project=retrain-walle-group
+    - wandb_init.notes=esm-if-protbert
+    - wandb_init.tags=esm-if-protbert
+    - dataset.node_feat_type=custom
+    - dataset.ab.custom_embedding_method_src.script_path=asep/data/embedding/esm_if1.py
+    - dataset.ab.custom_embedding_method_src.method_name=embed_esm_if
+    - dataset.ab.custom_embedding_method_src.name=ESM-IF
+    - dataset.ag.custom_embedding_method_src.script_path=asep/data/embedding/protbert.py
+    - dataset.ag.custom_embedding_method_src.method_name=embed_protbert
+    - dataset.ag.custom_embedding_method_src.name=ProtBERT
+    - hparams.input_ab_dim=512
+    - hparams.input_ag_dim=1024
+    - hparams.model_type=linear
+    - dataset.split_method=epitope_group
+    - hparams.max_epochs=300
+    - hparams.pos_weight=100
+    - hparams.train_batch_size=128
+    - hparams.val_batch_size=32
+    - hparams.test_batch_size=32
+  job:
+    name: train
+    chdir: null
+    override_dirname: dataset.ab.custom_embedding_method_src.method_name=embed_esm_if,dataset.ab.custom_embedding_method_src.name=ESM-IF,dataset.ab.custom_embedding_method_src.script_path=asep/data/embedding/esm_if1.py,dataset.ag.custom_embedding_method_src.method_name=embed_protbert,dataset.ag.custom_embedding_method_src.name=ProtBERT,dataset.ag.custom_embedding_method_src.script_path=asep/data/embedding/protbert.py,dataset.node_feat_type=custom,dataset.split_method=epitope_group,hparams.input_ab_dim=512,hparams.input_ag_dim=1024,hparams.max_epochs=300,hparams.model_type=linear,hparams.pos_weight=100,hparams.test_batch_size=32,hparams.train_batch_size=128,hparams.val_batch_size=32,mode=train,wandb_init.notes=esm-if-protbert,wandb_init.project=retrain-walle-group,wandb_init.tags=esm-if-protbert
+    id: ???
+    num: ???
+    config_name: config.yaml
+    env_set: {}
+    env_copy: []
+    config:
+      override_dirname:
+        kv_sep: '='
+        item_sep: ','
+        exclude_keys: []
+  runtime:
+    version: 1.3.2
+    version_base: '1.3'
+    cwd: /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode
+    config_sources:
+    - path: hydra.conf
+      schema: pkg
+      provider: hydra
+    - path: /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/conf
+      schema: file
+      provider: main
+    - path: ''
+      schema: structured
+      provider: schema
+    output_dir: /home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/hydra_configs/20250112-231123
+    choices:
+      pretrained_model: null
+      dataset: dataset
+      wandb_init: wandb
+      callbacks: default_callbacks
+      optimizer: adam
+      loss: loss
+      hparams: hparams
+      hydra: hydra
+      hydra/env: default
+      hydra/callbacks: null
+      hydra/job_logging: default
+      hydra/hydra_logging: default
+      hydra/hydra_help: default
+      hydra/help: default
+      hydra/sweeper: basic
+      hydra/launcher: basic
+      hydra/output: default
+  verbose: false

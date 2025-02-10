@@ -1,0 +1,66 @@
+{
+  "os":  "Linux-4.4.0-210-generic-x86_64-with-glibc2.23",
+  "python":  "CPython 3.10.9",
+  "startedAt":  "2025-01-14T01:35:31.318875Z",
+  "args":  [
+    "mode=train",
+    "wandb_init.project=retrain-walle-group",
+    "wandb_init.notes='protbert-esm2'",
+    "hparams.max_epochs=300",
+    "hparams.pos_weight=100",
+    "hparams.train_batch_size=128",
+    "hparams.val_batch_size=32",
+    "hparams.test_batch_size=32",
+    "hparams.input_ab_dim=1024",
+    "hparams.input_ag_dim=1024",
+    "dataset.node_feat_type=custom",
+    "dataset.ab.custom_embedding_method_src.script_path=asep/data/embedding/protbert.py",
+    "dataset.ab.custom_embedding_method_src.method_name=embed_protbert",
+    "dataset.ab.custom_embedding_method_src.name=ProtBERT",
+    "dataset.ag.custom_embedding_method_src.script_path=asep/data/embedding/esm2.py",
+    "dataset.ag.custom_embedding_method_src.method_name=embed_esm2",
+    "dataset.ag.custom_embedding_method_src.name=ESM2",
+    "hparams.model_type=linear"
+  ],
+  "program":  "/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode/train.py",
+  "codePath":  "asepcode/train.py",
+  "git":  {
+    "remote":  "https://github.com/mansorrahmed/epitope-pred.git",
+    "commit":  "7cc54f3e1f0bef6b663fd8b56683de8f4ea3a71c"
+  },
+  "email":  "mansoorbaloch931@gmail.com",
+  "root":  "/home/mansoor/antibody_design/epitope_prediction/epitope_pred/asepcode",
+  "host":  "olga",
+  "executable":  "/home/mansoor/anaconda3/envs/bio_cpu_venv/bin/python",
+  "codePathLocal":  "train.py",
+  "cpu_count":  20,
+  "cpu_count_logical":  40,
+  "gpu":  "NVIDIA Tesla K80",
+  "gpu_count":  2,
+  "disk":  {
+    "/":  {
+      "total":  "105555197952",
+      "used":  "98053361664"
+    }
+  },
+  "memory":  {
+    "total":  "811405299712"
+  },
+  "cpu":  {
+    "count":  20,
+    "countLogical":  40
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA Tesla K80",
+      "memoryTotal":  "11996954624",
+      "architecture":  "Kepler"
+    },
+    {
+      "name":  "NVIDIA Tesla K80",
+      "memoryTotal":  "11996954624",
+      "architecture":  "Kepler"
+    }
+  ],
+  "cudaVersion":  "11.3"
+}

@@ -1,0 +1,15 @@
+- mode=train
+- wandb_init.project=retrain-walle
+- wandb_init.notes='pre_cal'
+- dataset.node_feat_type=pre_cal
+- dataset.ab.embedding_model=igfold
+- dataset.ag.embedding_model=esm2
+- dataset.split_method=epitope_ratio
+- hparams.max_epochs=3
+- hparams.pos_weight=100
+- hparams.train_batch_size=32
+- hparams.val_batch_size=32
+- hparams.test_batch_size=32
+- hparams.input_ab_dim=480
+- hparams.input_ag_dim=480
+- hparams.model_type=linear
