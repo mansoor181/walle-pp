@@ -1,19 +1,9 @@
-Contents
 
-- [Evaluate pre-trained model](#evaluate-pre-trained-model)
-  - [Download ckpts from wandb](#download-ckpts-from-wandb)
-  - [Evaluate ckpts](#evaluate-ckpts)
-  - [Calculate mean metrics from evaluation results](#calculate-mean-metrics-from-evaluation-results)
-  - [Evaluation procedures](#evaluation-procedures)
-    - [Validate config](#validate-config)
-  - [Evaluation Results Schema](#evaluation-results-schema)
-    - [Config modification for old previous versions of config](#config-modification-for-old-previous-versions-of-config)
-  - [Pre-trained model and config](#pre-trained-model-and-config)
-    - [Split by epitope/surf ratio](#split-by-epitopesurf-ratio)
-    - [Split by epitope group](#split-by-epitope-group)
+This repository contains an extended version of [WALLE](https://github.com/biochunan/AsEP-dataset.git) for improved antibody-aware epitope prediction using graph convolutional network (GCN) coupled with protein language model (PLM)-based embedding methods such as ESM2, ProtBERT, and AntiBERTy.
 
 
 ## Embedding methods:
+Specifically, we employed the following residue and protein folding embedding methods:
 - [ESM2 and ESM-IF1](https://github.com/facebookresearch/esm.git)
 - [ProtBert](https://github.com/agemagician/ProtTrans.git)
 - BLOSUM62
@@ -28,42 +18,19 @@ Contents
 - [AsEP](https://github.com/biochunan/AsEP-dataset.git)
 
 
-## Evaluation procedures
-
-
-
 ## Evaluation Results Schema
 
+# Performance Comparison on Different Dataset Splits
 
+| Algorithm     | Epitope Ratio Split                                                 | Epitope Group Split                                                |
+|---------------|----------------------------------------------------------------------|----------------------------------------------------------------------|
+|               | MCC     | Prec.   | Recall  | AUCROC  | F1      | MCC     | Prec.   | Recall  | AUCROC  | F1      |
+|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
+| **WALLE++**   | **0.263** | **0.281** | **0.457** | **0.650** | **0.348** | **0.123** | 0.162   | **0.280** | **0.569** | **0.205** |
+| WALLE         | 0.210   | 0.235   | 0.258   | 0.635   | 0.145   | 0.077   | 0.143   | 0.266   | 0.544   | 0.145   |
+| EpiPred       | 0.029   | 0.122   | 0.142   | —       | 0.112   | -0.006  | 0.089   | 0.158   | —       | 0.112   |
+| ESMFold       | 0.028   | 0.137   | 0.060   | —       | 0.046   | 0.018   | 0.113   | 0.034   | —       | 0.046   |
+| ESMBind       | 0.016   | 0.106   | 0.090   | 0.506   | 0.064   | 0.002   | 0.082   | 0.076   | 0.500   | 0.064   |
+| MaSIF-site    | 0.037   | 0.125   | 0.114   | —       | 0.128   | 0.046   | **0.164** | 0.174   | —       | 0.128   |
 
-### Config modification for old previous versions of config
-
-- may need to add a field `model_type:"graph"` to hparams field
-- may need to add a field `split_method:null` to dataset field
-
-## Pre-trained model and config
-
-### Split by epitope/surf ratio
-
-|    Run Name    | Model  | Embedding (Ab/Ag) | \# GCN Layers |
-| :------------: | :----: | :---------------: | :-----------: |
-| clear-sweep-30 | graph  |      onehot       |       2       |
-| comic-sweep-9  | graph  |     ESM2/ESM2     |       2       |
-| decent-sweep-2 | graph  |     BLOSUM62      |       2       |
-| lilac-sweep-16 | linear |     ESM2/ESM2     |       2       |
-|  sage-sweep-9  | linear |    IgFold/ESM2    |       2       |
-| whole-sweep-72 | graph  |    IgFold/ESM2    |       2       |
-
-Best performing model on `valEpoch/avg_edge_index_bg_mcc`:
-
-|     Run Name      | Model | Embedding (Ab/Ag) | \# GCN Layers |
-| :---------------: | :---: | :---------------: | :-----------: |
-| treasured-sweep-8 | graph |    IgFold/ESM2    |       2       |
-
-
-### Split by epitope group
-
-|     Run Name     | Model | Embedding (Ab/Ag) | \# GCN layers |
-| :--------------: | :---: | :---------------: | :-----------: |
-| jumping-sweep-22 | graph |    IgFold/ESM2    |       2       |
-|   wild-sweep-1   | graph |    IgFold/ESM2    |       3       |
+**Note:** The best values in each column are highlighted in bold.
