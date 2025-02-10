@@ -1,26 +1,23 @@
+## Description
+
 
 This repository contains an extended version of [WALLE](https://github.com/biochunan/AsEP-dataset.git) for improved antibody-aware epitope prediction using graph convolutional network (GCN) coupled with protein language model (PLM)-based embedding methods such as ESM2, ProtBERT, and AntiBERTy.
 
 
 ## Embedding methods:
-Specifically, we employed the following residue and protein folding embedding methods:
-- [ESM2 and ESM-IF1](https://github.com/facebookresearch/esm.git)
-- [ProtBert](https://github.com/agemagician/ProtTrans.git)
-- BLOSUM62
-- One-hot encoding
-- [AntiBERTy](https://github.com/jeffreyruffolo/AntiBERTy.git)
+Specifically, we employed the following residue and protein folding embedding methods: [ESM2 and ESM-IF1](https://github.com/facebookresearch/esm.git), [ProtBert](https://github.com/agemagician/ProtTrans.git), [AntiBERTy](https://github.com/jeffreyruffolo/AntiBERTy.git), BLOSUM62, and One-hot encoding.
+
 
 
 ## Baseline epitope prediction methods:
 - [EpiGraph](https://github.com/sj584/EpiGraph.git)
-
+<!-- 
 ## Dataset:
 - [AsEP](https://github.com/biochunan/AsEP-dataset.git)
+ -->
 
 
-## Evaluation Results Schema
-
-# Performance Comparison on Different Dataset Splits
+## Performance Comparison on Different Dataset Splits
 
 | Algorithm     | Epitope Ratio Split                                                 | Epitope Group Split                                                |
 |---------------|----------------------------------------------------------------------|----------------------------------------------------------------------|
