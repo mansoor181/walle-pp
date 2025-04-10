@@ -275,6 +275,6 @@ if __name__ == "__main__":
 """
 python3 inference/compile_wandb_results.py \         
     --project_name "alibilab-gsu/retrain-walle" \
-    --api_key "228bf764d83d4fcb93bb729541c0b58e262ac25a" \
-    --output_dir "/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/results/asep/metrics/"
+    --api_key "" \
+    --output_dir ""
 """
